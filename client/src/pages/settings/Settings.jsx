@@ -5,13 +5,14 @@ import { Context } from "../../context/Context";
 import axios from "axios";
 
 export default function Settings() {
+  const { user, dispatch } = useContext(Context);
+
   const [file, setFile] = useState(null);
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState(user.username);
+  const [email, setEmail] = useState(user.email);
+  // const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:5000/images/";
 
   const handleSubmit = async (e) => {
@@ -19,9 +20,9 @@ export default function Settings() {
     dispatch({ type: "UPDATE_START" });
     const updatedUser = {
       userId: user._id,
-      username,
-      email,
-      password,
+      username: username,
+      email: email,
+      // password: password,
     };
     if (file) {
       const data = new FormData();
@@ -53,7 +54,7 @@ export default function Settings() {
           <div className="settingsPP">
             <img
               src={file ? URL.createObjectURL(file) : PF + user.profilePic}
-              alt=""
+              alt="Updated img"
             />
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>
@@ -78,10 +79,10 @@ export default function Settings() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <label>Password</label>
-          <input
+          {/* <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
-          />
+          /> */}
           <button className="settingsSubmit" type="submit">
             Update
           </button>

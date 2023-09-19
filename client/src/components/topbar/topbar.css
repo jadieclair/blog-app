@@ -65,3 +65,40 @@
   cursor: pointer;
   margin-left: 15px;
 }
+
+/* Media query for screens with a maximum width of 480px (mobile) */
+@media screen and (max-width: 481px) {
+  .top {
+    height: 30px; /* Increase the height for mobile */
+    max-width: 100%;
+  }
+
+  .topLeft {
+    display: none;
+  }
+
+  .topRight {
+    font-size: 15px;
+  }
+
+  .topIcon {
+    font-size: 24px; /* Adjust the font size for mobile */
+  }
+
+  .topImg {
+    display: none;
+  }
+
+  .topListItem {
+    font-size: 12px;
+  }
+
+  .topList {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  .topSearchIcon {
+    display: none;
+  }
+}

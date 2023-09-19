@@ -80,3 +80,37 @@
   margin-top: 20px;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 481px) {
+  .settingsWrapper {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .settingsUpdateTitle {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .settingsDeleteTitle {
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+
+  .settingsForm > label {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .settingsForm > input {
+    margin: 8px 0; /* Adjust margin for smaller screens */
+    height: 28px; /* Adjust input height for smaller screens */
+  }
+
+  .settingsSubmit {
+    width: 130px; /* Adjust button width for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+
+  /* Add any other mobile-specific styles as needed */
+}

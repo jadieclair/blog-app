@@ -97,3 +97,32 @@
   align-self: flex-end;
   margin-top: 20px;
 }
+
+/* Media query for screens with a maximum width of 481px (mobile) */
+@media screen and (max-width: 481px) {
+  .singlePostImg {
+    height: auto; /* Make the image responsive by removing fixed height */
+  }
+
+  .singlePostTitle {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  .singlePostTitleInput {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  .singlePostInfo {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .singlePostDesc {
+    font-size: 16px; /* Adjust font size for mobile */
+    line-height: 22px; /* Adjust line height for mobile */
+  }
+
+  .singlePostDescInput {
+    font-size: 16px; /* Adjust font size for mobile */
+    line-height: 22px; /* Adjust line height for mobile */
+  }
+}

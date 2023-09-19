@@ -62,4 +62,40 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  margin: 12px 12px;
+}
+
+/* Media query for screens with a maximum width of 480px (mobile) */
+@media screen and (max-width: 480px) {
+  .post {
+    width: 100%; /* Make the blog posts span the full width of the screen */
+    margin: 0px 0px 20px 0px; /* Adjust the margin as needed for spacing between posts */
+    margin: 10px 10px;
+  }
+
+  .postImg {
+    height: 200px; /* Adjust the height for mobile */
+  }
+
+  .postCat {
+    font-size: 10px; /* Adjust the font size for mobile */
+  }
+
+  .postTitle {
+    font-size: 20px; /* Adjust the font size for mobile */
+  }
+
+  .postDate {
+    font-size: 12px; /* Adjust the font size for mobile */
+  }
+
+  .postDesc {
+    font-size: 12px; /* Adjust the font size for mobile */
+    -webkit-line-clamp: 3; /* Display fewer lines of text on mobile */
+    margin: 5px 10px;
+  }
+
+  .post:hover {
+    display: none;
+  }
 }

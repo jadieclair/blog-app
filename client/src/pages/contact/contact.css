@@ -82,7 +82,7 @@
   height: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 481px) {
   .contact-container {
     padding: 10px;
   }

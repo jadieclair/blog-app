@@ -23,7 +23,7 @@
   border-top: 1px solid #a7a4a4;
   border-bottom: 1px solid #a7a4a4;
   font-family: "Varela Round", sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   color: #222;
   font-weight: 600;
   line-height: 20px;
@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.sidebarListItem:hover {
+  transform: scale(1.8);
+}
+
 .sidebarSocial {
   margin-top: 15px;
   width: 250px;
@@ -66,4 +70,11 @@
   font-size: 16px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 481px (mobile) */
+@media screen and (max-width: 481px) {
+  .sidebar {
+    display: none; /* Hide the sidebar on mobile devices */
+  }
 }

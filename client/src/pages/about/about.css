@@ -55,3 +55,49 @@ header h1 {
   text-align: center;
   margin: 25px 125px;
 }
+
+/* Your existing CSS code before the media query */
+
+/* Media query for screens with a maximum width of 481px (mobile) */
+@media screen and (max-width: 481px) {
+  header {
+    padding: 8px 0; /* Adjust the padding for mobile */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Adjust the font size for mobile */
+    margin: 5px 10px;
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack elements vertically for mobile */
+    padding: 16px; /* Adjust the padding for mobile */
+    margin: 5px 10px;
+  }
+
+  .author {
+    margin: 15px 10px; /* Adjust the margin for mobile */
+    max-width: 100%; /* Ensure the author container doesn't overflow */
+  }
+
+  .author img {
+    width: 150px; /* Adjust the image size for mobile */
+    height: 150px; /* Adjust the image size for mobile */
+    margin: 5px 10px;
+  }
+
+  .author h2 {
+    font-size: 1.25rem; /* Adjust the font size for mobile */
+    margin: 5px 10px;
+  }
+
+  .author p {
+    font-size: 0.9rem; /* Adjust the font size for mobile */
+    margin: 5px 10px;
+  }
+
+  .blog-history {
+    margin: 10px; /* Adjust the margin for mobile */
+    margin: 5px 10px;
+  }
+}

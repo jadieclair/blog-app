@@ -51,7 +51,7 @@ export default function Sidebar() {
     }, 5000);
 
     return () => clearInterval(intervalId); // Clean up the interval when the component unmounts
-  }, []); // Empty dependency array to run this effect once
+  }, [bios.length]); // Include bios.length in the dependency array
 
   return (
     <div className="sidebar">
@@ -59,7 +59,7 @@ export default function Sidebar() {
         <span className="sidebarTitle">ABOUT ME</span>
         <img
           src={bios[bioIndex].imgSrc}
-          alt="Profile Image"
+          alt="Profile"
           style={{
             borderRadius: "50%",
             width: "100px",
@@ -70,7 +70,11 @@ export default function Sidebar() {
         <p>{bios[bioIndex].text}</p>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
+        <span className="sidebarTitle">
+          <strong>
+            <u>CATEGORIES</u>
+          </strong>
+        </span>
         <ul className="sidebarList">
           {cats.map((c) => (
             <Link key={c._id} to={`/?cat=${c.name}`} className="link">

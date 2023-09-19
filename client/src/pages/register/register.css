@@ -63,3 +63,20 @@
 .registerLoginButton:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 481px) {
+  /* Add your mobile-specific styles here */
+  .loginTitle {
+    font-size: 30px; /* Example: Decrease font size for smaller screens */
+  }
+
+  .loginForm {
+    margin-top: 10px; /* Example: Adjust margin for smaller screens */
+  }
+
+  .loginButton {
+    margin-top: 10px; /* Example: Adjust margin for smaller screens */
+  }
+
+  /* Add any other mobile-specific styles as needed */
+}

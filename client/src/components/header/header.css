@@ -32,3 +32,23 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1.5); /* Adjust the shadow properties as needed */
   margin-bottom: 20px; /* Adjust the margin size as needed */
 }
+
+/* Media query for screens with a maximum width of 480px (mobile) */
+@media screen and (max-width: 480px) {
+  .headerTitleSm {
+    top: 10%; /* Adjust the position as needed for mobile */
+    font-size: 18px; /* Adjust the font size as needed for mobile */
+  }
+
+  .headerTitleLg {
+    top: 12%; /* Adjust the position as needed for mobile */
+    font-size: 40px; /* Adjust the font size as needed for mobile */
+    margin-top: 10px;
+  }
+
+  .headerImg {
+    padding-top: 50px;
+    margin-top: 100px; /* Adjust the margin-top as needed for mobile */
+    height: 300px; /* Adjust the height as needed for mobile */
+  }
+}

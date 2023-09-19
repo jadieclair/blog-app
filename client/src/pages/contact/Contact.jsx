@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./contact.css";
 
 export default function Contact() {
@@ -32,6 +32,5 @@ export default function Contact() {
         </button>
       </form>
     </div>
-
   );
 }

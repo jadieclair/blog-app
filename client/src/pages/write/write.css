@@ -61,3 +61,38 @@
   cursor: pointer;
   font-size: 16px;
 }
+
+@media screen and (max-width: 481px) {
+  .writeImg {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    width: 90vw; /* Adjust image width for smaller screens */
+    height: 200px; /* Adjust image height for smaller screens */
+  }
+
+  .writeFormGroup {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .writeIcon {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .writeInput {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: 90vw; /* Adjust input width for smaller screens */
+  }
+
+  .writeText {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    height: auto; /* Remove fixed height for smaller screens */
+  }
+
+  .writeSubmit {
+    top: 10px; /* Adjust top position for smaller screens */
+    right: 10px; /* Adjust right position for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Add any other mobile-specific styles as needed */
+}
